@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N.º 1 - PowerShell</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0d6efd;
+            margin-top: 30px;
+        }
+        .info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background-color: #212529;
+            color: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trabajo Práctico N.º 1 - PowerShell</h1>
+
+    <div class="info">
+        <h2>TRABAJO PRÁCTICO N.º 1: SCRIPT PARA POWERSHELL</h2>
+        <p><strong>Módulo:</strong> Programación para Seguridad Informática</p>
+        <p><strong>Docente:</strong> Lic. y Prof. Carlos Pacheco</p>
+        <p><strong>Alumno:</strong> Federico Cala</p>
+    </div>
+
+    <div class="info">
+        <h2>Descripción de la Actividad</h2>
+        <p>
+            Desarrollo de un script en PowerShell para consultar de forma automatizada 
+            la versión de PowerShell, la política de ejecución vigente, la información 
+            del sistema operativo y los datos generales del equipo mediante comandos del sistema.
+        </p>
+    </div>
+
+    <div class="info">
+        <h2>Comandos Principales Utilizados</h2>
+        <ul>
+            <li><code>$PSVersionTable</code> → Información general de PowerShell</li>
+            <li><code>$PSVersionTable.PSVersion</code> → Versión exacta instalada</li>
+            <li><code>Get-ExecutionPolicy</code> → Política de ejecución actual del entorno</li>
+            <li><code>Get-CimInstance Win32_OperatingSystem</code> → Información detallada del sistema operativo</li>
+            <li><code>systeminfo</code> → Información general y extendida del equipo mediante CMD</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h2>Cómo ejecutar el script</h2>
+        <pre>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+.\info_sistema.ps1</pre>
+    </div>
+
+    <div class="footer">
+        Trabajo Práctico de PowerShell - 2026
+    </div>
+
+</body>
+</html>
